@@ -6,7 +6,12 @@ namespace Part3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("How many miles have you driven?");
+            double miles = double.Parse(Console.ReadLine());
+            Console.WriteLine("How many gallons of gas were used?");
+            double gas = double.Parse(Console.ReadLine());
+            double milesPerGallon = miles / gas;
+            Console.WriteLine("You averaged " + milesPerGallon + " miles per gallon.");
         }
     }
 }
